@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+       
+       Individual Project
+ 
+       Author: Justin Benson
+       Date:   09/06/2023
+ 
+       Filename: mywebsite.html
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Hands-on Project 3-2</title>
+    <link rel="stylesheet" href="mywebsite.css">
+    <script src="mywebsite.js" defer></script>
+ </head>
+ <div class= "header">
+   <div class="center">Destiny 2 Fan Page</div>
+    </div>
+ <body>
+   <nav class="navbar">
+      <a href="mywebsite.html">Home</a>
+      <a href="damage_calc.html">Damage Calc</a>
+      <a href="lore.html" >Lore</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="slides">
+      
+      <img class="mySlides" src="cayde-6.jpg"
+      style="width:640px" style="height:480px">
+      <img class="mySlides" src="zavala.png"
+      style="width:640px" style="height:480px">
+      <img class="mySlides" src="ikora.png"
+      style="width:640px" style="height:480px">
+      <img class="mySlides" src="saint_14.jpg"
+      style="width:640px" style="height:480px">
+    
+   </div>
+
+   <form>
+        <p class="text">Input boss information</p>
+        Enter Boss health bar
+        <input type="text" id="boss"/>
+        Enter how many damage phases
+        <input type="text" id="damage"/>
+        <input type="button" onClick="dmgPhases()" value="Submit"></input><br>
+   </form>
+   <p>This much damage will have to done per phase:</p><span id="result"></span></p>
+      
+
+</body>
